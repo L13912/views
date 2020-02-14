@@ -1,0 +1,41 @@
+.topPanel {
+
+}
+
+.topPanel .activeGamer {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--active-g-color);
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.topPanel .gamerName {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.topPanel .heroName {
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.topPanel .stats {
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 40px 40px;
+    grid-column-gap: 10%;
+    grid-row-gap: 10px;
+}
+
+.topPanel .stats div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
