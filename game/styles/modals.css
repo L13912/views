@@ -1,0 +1,60 @@
+.heroModal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.none {
+    display: none;
+}
+
+.heroSettings {
+    width: 50%;
+    height: auto;
+    padding: 2vw;
+    border-radius: 1vw;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+
+label {
+    display: block;
+    padding: 1vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    font-size: 1.11vw;
+    color: black;
+    padding: 0.69vw;
+    border-radius: 0.3vw;
+    background: none;
+    box-sizing: border-box;
+}
+
+.modal button {
+    display: block;
+    margin: 1vw auto;
+    font-size: 1.11vw;
+    color: white;
+    padding: 0.69vw;
+    border-radius: 0.3vw;
+    background-color: var(--green);;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}

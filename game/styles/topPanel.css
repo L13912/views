@@ -1,41 +1,103 @@
 .topPanel {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .topPanel .activeGamer {
-    width: 300px;
-    height: 200px;
+    width: 15vw;
+    min-width: 15vw;
+    height: min-content;
     overflow: hidden;
     background-color: var(--active-g-color);
     text-align: center;
-    padding: 15px;
+    padding: 0.5vw 0.69vw;
     box-sizing: border-box;
-    border: 2px solid black;
+    margin-right: 5vw;
 }
 
 .topPanel .gamerName {
-    font-size: 13px;
-    padding-bottom: 10px;
+    font-size: 0.9vw;
+    padding-bottom: 0.5vw;
 }
 
 .topPanel .heroName {
     font-weight: bolder;
-    font-size: 16px;
-    padding-bottom: 10px;
+    font-size: 1.11vw;
+    padding-bottom: 0.5vw;
 }
 
 .topPanel .stats {
     display: grid;
     box-sizing: border-box;
-    padding: 10px;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 40px 40px;
-    grid-column-gap: 10%;
-    grid-row-gap: 10px;
+    padding: 0.69vw;
+    grid-template-columns: calc(50% - 1px) 2px calc(50% - 1px);
+    grid-template-rows: 3.4vw 2px 3.4vw;
 }
 
-.topPanel .stats div {
+.topPanel .stats  div.separator {
+    padding: 0;
+    background: black;
+}
+
+.topPanel .stats > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.69vw;
+}
+
+.topPanel .stats .count {
+    font-size: 1.11vw;
+}
+
+.topPanel svg {
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.topPanel .settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.69vw;
+}
+
+.topPanel .gamers {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topPanel .gamer {
+    width: 15vw;
+    height: min-content;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 2px;
+}
+
+.topPanel .gamerInfo {
+    background-color: var(--active-g-color);
+    padding: 0.69vw;
+    position: relative;
+}
+
+.gamerInfo::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -0.25vw;
+    bottom: -9.3vw; /* Положение треугольника */
+    border: 8vw solid transparent; /* Прозрачные границы */
+    border-top: 1.3vw solid var(--active-g-color); /* Добавляем треугольник */
+}
+
+.text {
+    text-align: center;
+    top: -1vw;
+    position: relative;
+    margin: 0px;
+    color: black;
+    cursor: pointer;
+    font-size: 1.11vw;
 }
